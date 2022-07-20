@@ -1,0 +1,95 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Arvo', serif;
+}
+
+main {
+    margin: 0px 6.5rem;
+}
+
+.container {
+    background-color: black;
+    border-radius: 30px;
+    height: 450px;
+}
+
+
+.top-description {
+    width: 45%;
+    height: 424px;
+    text-align: left;
+    margin-left: 5.5rem;
+}
+
+
+.top-description .main-title {
+    font-size: 3.7vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.top-description .sub-title {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.first-button {
+    background-color: #DD0000;
+    color: #FFFFFF;
+    padding: 16px 25px;
+    border-radius: 5px;
+}
+
+.nav-article {
+    display: flex;
+    margin-top: 130px;
+}
+
+.second-button {
+    background-color: black;
+    width: 312px;
+    border-radius: 10px;
+}
+
+.nav {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-right: 12px;
+    padding: 6px 8px 6px 8px;
+}
+
+.article-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article {
+    margin-bottom: 24px;
+    margin-left: 20px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    padding-bottom: 12px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.article-info {
+    margin: 0rem 22px;
+}
+
+.footer {
+    background-color: black;
+    height: 444px;
+}
+
+.anchor a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+}
