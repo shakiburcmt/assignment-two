@@ -1,0 +1,117 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Arvo', serif;
+}
+
+/*------------ according to fig file margin */
+main,
+footer {
+    margin: 0px 6.5rem;
+}
+
+/* ---------------1st section design -------------
+----------------------- */
+.container {
+    background-color: black;
+    border-radius: 30px;
+    height: 450px;
+}
+
+
+.top-description {
+    width: 45%;
+    height: 424px;
+    text-align: left;
+    margin-left: 5.5rem;
+
+}
+
+
+.top-description .main-title {
+    font-size: 3.7vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.top-description .sub-title {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.first-button {
+    background-color: #DD0000;
+    color: #FFFFFF;
+    padding: 16px 25px;
+    border-radius: 5px;
+
+
+}
+
+/* last part design of first section  */
+.first-button:hover {
+    width: 500px;
+}
+
+/*
+--------------------- article and navigation part design 
+----------------------------------------------------------------- */
+.nav-article {
+    display: flex;
+    margin-top: 130px;
+}
+
+.second-button {
+    background-color: black;
+    width: 312px;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 15px 8px 15px 8px;
+}
+
+.nav {
+    width: 100%;
+    margin-right: 12px;
+}
+
+div.nav button {
+    width: 100%;
+    padding: 17px 39px;
+    border-radius: 10px;
+}
+
+.article-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    padding-top: 53px;
+}
+
+article {
+    margin-bottom: 24px;
+    margin-left: 20px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding-bottom: 12px;
+    width: 312px;
+    height: 242px;
+}
+
+/* footer and anchor design  */
+
+.footer {
+    background-color: black;
+    height: 444px;
+}
+
+.anchor a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+}
