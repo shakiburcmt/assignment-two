@@ -95,11 +95,9 @@ div.nav button {
 
 article {
     margin-bottom: 24px;
-    margin-left: 20px;
     border-radius: 8px;
     border: 1px solid gray;
     padding-bottom: 12px;
-    width: 312px;
     height: 242px;
 }
 
@@ -114,4 +112,89 @@ article {
     text-decoration: none;
     margin-left: 20px;
     color: white;
+}
+
+/* media query
+----------------------------------------------------------- */
+
+/*----------------------
+------------------------ media for small device-------------------------------- */
+@media only screen and (min-width:0px) and (max-width:687px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+
+}
+
+.nav-article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+
+.anchor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (min-width :688px) and (max-width:991px) {
+
+    .nav-article {
+        display: block;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .second-button {
+        background-color: transparent;
+    }
+
+    .second-button button {
+        background-color: #fff;
+    }
+
+    .second-button,
+    .article-body {
+        width: 100%;
+    }
+
+    .article-body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .anchor {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+
+    /* .container {
+        grid-template-rows: repeat(3, 1fr);
+    } */
+    .nav-article {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .country {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
