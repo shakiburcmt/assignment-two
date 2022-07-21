@@ -5,10 +5,14 @@ body {
     font-family: 'Arvo', serif;
 }
 
-main {
+/*------------ according to fig file margin */
+main,
+footer {
     margin: 0px 6.5rem;
 }
 
+/* ---------------1st section design -------------
+----------------------- */
 .container {
     background-color: black;
     border-radius: 30px;
@@ -21,6 +25,7 @@ main {
     height: 424px;
     text-align: left;
     margin-left: 5.5rem;
+
 }
 
 
@@ -41,8 +46,18 @@ main {
     color: #FFFFFF;
     padding: 16px 25px;
     border-radius: 5px;
+
+
 }
 
+/* last part design of first section  */
+.first-button:hover {
+    width: 500px;
+}
+
+/*
+--------------------- article and navigation part design 
+----------------------------------------------------------------- */
 .nav-article {
     display: flex;
     margin-top: 130px;
@@ -51,15 +66,20 @@ main {
 .second-button {
     background-color: black;
     width: 312px;
+    height: fit-content;
     border-radius: 10px;
+    padding: 15px 8px 15px 8px;
 }
 
 .nav {
-    display: grid;
-    justify-content: center;
     width: 100%;
     margin-right: 12px;
-    padding: 6px 8px 6px 8px;
+}
+
+div.nav button {
+    width: 100%;
+    padding: 17px 39px;
+    border-radius: 10px;
 }
 
 .article-body {
@@ -83,6 +103,13 @@ article {
     margin: 0rem 22px;
 }
 
+.view-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer and anchor design  */
+
 .footer {
     background-color: black;
     height: 444px;
@@ -92,4 +119,79 @@ article {
     text-decoration: none;
     margin-left: 20px;
     color: white;
+}
+
+/* media query
+----------------------------------------------------------- */
+
+/*----------------------
+------------------------ media for small device-------------------------------- */
+@media only screen and (min-width:0px) and (max-width:687px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    /* button only show in tab mood  */
+    .view-button {
+        display: none;
+    }
+
+    .nav-article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .article-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .anchor {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+
+/* button show here and tablet media query */
+
+@media only screen and (min-width :992px) {
+    .view-button {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width :688px) and (max-width:991px) {
+
+    .nav-article {
+        display: block;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .second-button {
+        background-color: transparent;
+    }
+
+    .second-button button {
+        background-color: #fff;
+    }
+
+    .second-button,
+    .article-body {
+        width: 100%;
+    }
+
+    .article-body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
